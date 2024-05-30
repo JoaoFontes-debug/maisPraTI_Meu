@@ -1,0 +1,22 @@
+thead {
+    border-bottom: rgb(224, 14, 14);
+    text-align: center;
+    background-color: #2c5e77;
+    color: #fff;
+
+}
+
+tbody {
+    border-bottom: red;
+    background-color: gold;
+    text-align: center;
+}
+
+h1 {
+    inline-size: 100px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: orange;
+    border-color: rebeccapurple;
+    border-style: ridge;
+}
