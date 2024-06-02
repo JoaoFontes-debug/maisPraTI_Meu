@@ -1,4 +1,5 @@
 /*Estrutura Padrão do site*/
+
 body {
     /* comando repeat - x especifica que a imagem vai preencher apenas no eixo X deixando o y livre*/
     background: #f4f2ec url(img/fundo.png) repeat-x;
@@ -38,7 +39,7 @@ a:hover {
 /*Barra de navegação*/
 
 header {
-    padding: 15px;
+    padding: 15px 0;
     height: 55px;
 }
 
@@ -61,4 +62,118 @@ nav ul li a:link {
 
 nav ul li a:hover {
     border-bottom: 1px solid #535858;
+}
+
+/*Principal*/
+
+#conteudo {
+    width: 720px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+article#video {
+    float: left;
+    width: 310px;
+    margin-left: 20px;
+}
+
+article#mapa {
+    float: left;
+    width: 310px;
+    margin-left: 35px;
+}
+
+article#exposicoes {
+    float: left;
+    width: 310px;
+    margin: 15px 0 0 25px;
+}
+
+article#historia {
+    float: left;
+    width: 310px;
+    margin: 15px 0 0 20px;
+}
+
+h4 {
+    color: #86521a;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    color: #227115;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+/*aside*/
+
+aside {
+    margin-bottom: 20px;
+    width: 350px;
+    float: left;
+
+}
+
+input {
+    height: 20px;
+    width: 80px;
+    background-color: #fff;
+    border: none;
+    font-size: 1em;
+}
+
+input.campo {
+    border: 1px solid #ada484;
+
+}
+
+input.botao {
+    height: 40px;
+    width: 100%;
+    color: white;
+    background: #9b9271;
+    font-size: 1.2em;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    display: none;
+}
+
+section#visita {
+    background: #cdc8b1;
+    padding: 10px 20px 20px;
+    margin-top: 10px;
+}
+
+section#galeria {
+    padding: 0 30px 0 30px;
+}
+
+section#galeria a {
+    display: block;
+    padding: 15px;
+    background: url(img/fundo-foto.png) no-repeat;
+    float: left;
+}
+
+/*footer*/
+footer {
+    clear: both;
+    padding: 20px;
+    text-align: center;
+    /* alinhando o testo dentro da area do footer*/
+    background: url(img/fundo-rodape.png) no-repeat center top;
+}
+
+footer>p a {
+    padding: 2px 10px;
 }
