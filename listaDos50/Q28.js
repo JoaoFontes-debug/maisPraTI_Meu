@@ -15,8 +15,8 @@ for(let i = 0; i < 10; i++){
 
 function elementoForaDiagonal(matriz){
     let diagonalSuperior = new Array(1).fill(0); //usei o metodo Fill para preencher o vetor com 
-    let diagonalInferior = new Array(1).fill(0); //zeros.Isso possibilita fazer o += no   
-                                                 //looping                                             
+    let diagonalInferior = new Array(1).fill(0); //zeros.Isso possibilita fazer o += no looping  
+                                                                                     
     for(let i = 0; i < matriz.length; i++){
         for(let j = i + 1; j < matriz[i].length; j++){
             diagonalSuperior[0] += matriz[i][j]; //adicionar "i" como posição da variavel ->

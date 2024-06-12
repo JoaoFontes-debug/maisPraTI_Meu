@@ -38,6 +38,5 @@ funcionarios.forEach(funcionarios => {
     if (Object.hasOwnProperty.call(Carlos, i)) {
         const element = Carlos[i];
         console.log(element);
-        
     }
   }

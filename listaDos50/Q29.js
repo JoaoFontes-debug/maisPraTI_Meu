@@ -19,6 +19,7 @@ function calculosMatriz(recebeMatriz){
     let somaLinha4 = new Array(1).fill(0);
     let somaColuna2 = 0;
     let somaDiagonal = 0;
+    let somaTodos = 0;
     //soma a linha 4
     for(let j = 0; j < recebeMatriz[3].length; j++){
         somaLinha4[0] += recebeMatriz[3][j];             
@@ -29,9 +30,13 @@ function calculosMatriz(recebeMatriz){
         somaColuna2 += linha[2];
     });
     //soma diagonal principal
-    //iterando sobre as linhas e pegando o elemento na posiçao que incrementada
-    recebeMatriz.forEach(linha => {
-        somaDiagonal += linha[0]++;
+    //iterando sobre as linhas e pegando o elemento na posiçao que é incrementada
+    for(let i = 0; i < recebeMatriz.length; i++) {
+        somaDiagonal += recebeMatriz[i][i];
+    }
+    //soma de todos os elementos
+    recebeMatriz.forEach(linhas => {
+        linhas.forEach(elementos => somaTodos+=elementos)
     });
     console.log("Matriz"); 
     console.table(recebeMatriz);
@@ -41,5 +46,7 @@ function calculosMatriz(recebeMatriz){
     console.log(somaColuna2); 
     console.log("Soma da diagonal"); 
     console.log(somaDiagonal); 
+    console.log("Soma total");
+    console.table(somaTodos);
 }
 calculosMatriz(matrizA);
