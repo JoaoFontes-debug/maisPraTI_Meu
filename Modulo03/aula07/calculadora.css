@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    background-color: rgb(131, 175, 173);
+}
+
+h1 {
+    color: aliceblue;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+}
+
+.botao {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    background-color: rgb(116, 193, 129);
+    font-family: 'Libre Baskerville';
+    text-align: center;
+}
+
+.calcularTotal {
+    width: 140px;
+    height: 40px;
+    padding: 0px;
+    background-color: rgb(116, 193, 129);
+}
+
+.resultado {
+    margin: 3px 3px 3px 3px;
+    padding: 5px;
+    width: 170px;
+    height: 30px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: 'Libre Baskerville';
+}
+
+.tabela {
+    width: 195px;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(194, 194, 207);
+    filter: drop-shadow(10px 2px 2px rgb(9, 44, 74));
+}

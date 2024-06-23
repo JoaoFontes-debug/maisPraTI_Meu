@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserindo JS</title>
+</head>
+
+<body>
+    <h1>Titulo 01</h1>
+
+    <input type="text" placeholder="teste" id="nome" disable="disable">
+    <br>
+    <br>
+    <p>EVENTOS DE MOUSE</p>
+    <!-- um click -->
+    <div style="background-color: brown; height: 200px; width: 200px ; display: inline-block;" onclick="eventoMouse()">
+    </div>
+    <!-- duplo click -->
+    <div style="background-color: rgb(76, 118, 83); height: 200px; width: 200px; margin-top: 10px; display: inline-block;"
+        onDblclick="eventoMouse()"></div>
+
+    <div style="background-color: rgb(107, 76, 118); height: 200px; width: 200px; margin-top: 10px; display: inline-block;"
+        onmouseup="eventoMouse()"></div>
+
+    <div style="background-color: rgb(105, 175, 189); height: 200px; width: 200px; margin-top: 10px; display: inline-block;"
+        onmouseover="eventoMouse()"></div>
+
+    <div style="background-color: rgb(118, 76, 76); height: 200px; width: 200px; margin-top: 10px; display: inline-block;"
+        onmouseout="eventoMouse()"></div>
+    <script src="script.js"></script>
+
+
+    <p>EVENTOS DE TECLADO</p>
+    <section>
+        <input onkeyup="eventoTeclado()" type="text" style="margin: 10px 0px; display: block;" placeholder="onkeyup">
+
+        <input onkeydown="eventoTeclado()" type="text" style="margin: 10px 0px; display: block; "
+            placeholder="onkeydown">
+
+        <input onkeypress="eventoTeclado()" type="text" style="margin: 10px 0px; display: block;"
+            placeholder="onkeypress">
+    </section>
+
+    <p>EVENTOS DE JANELA</p><!-- EVENTOS DE JANELA -->
+    <p>Visivel apenas no codigo</p>
+    <!-- testei e so funcionou no body-->
+    <div onresize="eventoJanela()"></div>
+    <div onscroll="eventoJanela()"></div>
+    <!--<body onscroll="eventoJanela()">-->
+    <p>EVENTOS GENRICOS</p>
+
+    <select onchange="eventoJanela()">
+        <option value="2">Gremio</option>
+        <option value="10">Bahia</option>
+    </select>
+    <!--quando recebe o foco do cursor-->
+    <input type="number" onfocus="eventoJanela()">
+    <input type="text" onfocus="eventoJanela()">
+    <!--quando sai do foco do cursor-->
+    <input type="text" onblur="eventoJanela()">
+
+
+
+</body>
+
+</html>
