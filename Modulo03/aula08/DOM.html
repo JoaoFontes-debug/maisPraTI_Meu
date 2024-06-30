@@ -1,0 +1,58 @@
+<!--DOM - API, multplataforma permite o js acesso a todos os elementos html.
+Cada elemento é um nó. renderiza os elementos html, é uma arvore de estrutura de dados-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterando CSS com js</title>
+    <style>
+        .estilo {
+            background-color: rgb(165, 42, 130);
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+    <script>
+        function mudarEstilizacaoClasse() {
+            document.getElementById('divClass').className = 'estilo';
+        }
+    </script>
+    <script>
+        function mudarEstilizacao(instruçãoCss) {
+            let tabela = document.getElementById('tabela')
+            tabela.style.backgroundColor = instruçãoCss;
+            tabela.style.padding = "5px";
+
+            document.getElementById('square').style.backgroundColor = 'red';
+        }
+    </script>
+</head>
+
+<body>
+    <button type="button" onclick="mudarEstilizacao('blue')">Laranja</button>
+
+    <table border="2px" id="tabela">
+        <tr>
+            <td>
+                nome
+            </td>
+
+            <td>
+                idade
+            </td>
+        </tr>
+    </table>
+    <div style=" margin: 5px; border: solid 2px seagreen; width: 100px; height: 100px; " id="square"></div>
+
+    <button type="button" onclick="mudarEstilizacaoClasse()">mudar div pela classe</button>
+    <div style=" margin: 5px; border: solid 2px rgb(149, 35, 242); " id="divClass">
+
+    </div>
+
+
+</body>
+
+</html>

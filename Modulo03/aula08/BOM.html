@@ -1,0 +1,53 @@
+<!--BOM: browser object model-->
+<!--Forma de se comunicar com o navegador atraves do js. Exemplo: historico de navegação, recuperar cookies, manipular janela, localização do usuario etc-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilizando o BOM</title>
+    <script>
+        let janela;
+        function popUp() {
+            janela = window.open('', 'nova_janela', 'width = 200, heigth = 200');
+        }
+
+        function closePopUp() {
+            janela.close()
+        }
+    </script>
+
+    <script>
+        let altura = window.screen.availHeight;
+        let largura = window.screen.availWidth;
+        document.write('altura do navegador: ' + altura + '</br>');
+        document.write('largura do navegador: ' + largura + '</br></br>');
+    </script>
+
+    <script>
+        window.setTimeout(() => {
+            document.write('BOM </br>');
+        }, 700);
+
+        let i = 10;
+        let x = window.setInterval(() => {
+            document.write(i + '</br>')
+            i--;
+            if (i === 0) { clearInterval(x) }
+        }, 1000);
+    </script>
+</head>
+
+<body>
+    <button type="button" onclick="popUp()">Abrir janela</button>
+    <button type="button" onclick="closePopUp()">Fechar janela</button>
+    <button type="button" onclick="window.print()">Imprimir</button>
+
+    <button onclick="window.location.href = 'http://www.google.com'">Acessar </button>
+
+    <button onclick="alert(location.hostname)">hostname </button>
+</body>
+
+</html>

@@ -43,5 +43,8 @@ h1 {
     border-radius: 5px;
     text-align: center;
     background-color: rgb(194, 194, 207);
+    /*usado para por sombra no elemento podendo comfigurar desfocque e lado em que a sombra aparece*/
     filter: drop-shadow(10px 2px 2px rgb(9, 44, 74));
+    /*sombra sobre o elemento*/
+    /*box-shadow: 0 10px 10px rgb(181, 173, 183);*/
 }
