@@ -1,0 +1,151 @@
+ body {
+     background: #4377cba0;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: snow;
+ }
+
+ #container {
+     width: 900px;
+     height: 1920px;
+     padding-top: 25px;
+     border-radius: 25px;
+     margin: 0 auto;
+     background-color: aliceblue;
+ }
+
+ #container>main>#conteudo>form,
+ header {
+     margin: 0 auto;
+ }
+
+ h2 {
+     text-align: center;
+     color: #3a59c4;
+
+ }
+
+ header {
+     width: 800px;
+     height: 170px;
+     padding: 15px;
+     background-color: #3a59c4;
+     border-radius: 10px;
+
+ }
+
+ header>div>img {
+     width: 150px;
+     border: solid 2px rgb(249, 247, 246);
+     border-radius: 10px;
+     float: left;
+ }
+
+ header>div>h1 {
+
+     color: salmon;
+     width: 116px;
+     font-size: 25px;
+     margin: 0;
+ }
+
+ nav {
+     padding: 15px;
+     display: inline-block;
+     position: relative;
+ }
+
+ nav>ul>li {
+     display: inline-block;
+     padding: 15px;
+     font-size: 16px;
+     border: 1px solid snow;
+ }
+
+ a {
+     text-decoration: none;
+     color: snow;
+ }
+
+ a:hover {
+     text-decoration: underline;
+ }
+
+ nav>ul>li:hover {
+     background-color: rgb(191, 226, 121);
+ }
+
+ #form {
+     width: 800px;
+     height: 320px;
+     padding: 15px;
+     background-color: rgb(147, 190, 187);
+     border-radius: 10px;
+ }
+
+ #nome,
+ #email {
+     width: 170px;
+     margin: 2px;
+     position: relative;
+     margin-left: 1px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ #conteudo>#form>fieldset>#modo,
+ #estados {
+     margin-left: 10px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ #conteudo>#form>fieldset>#modo,
+ #estados>#pularlinha{
+    display: block;
+    margin-left: 2px;
+    
+ }
+
+ #textarea {
+     position: relative;
+     margin-top: 15px;
+ }
+
+ #textarea>label {
+     margin-bottom: 5px;
+     display: block;
+ }
+
+ fieldset {
+     border: none;
+ }
+
+ textarea {
+     width: 300px;
+     height: 120px;
+     display: block;
+     margin-bottom: 10px;
+     border-radius: 10px;
+     resize: none;
+ }
+
+ #conteudo>#form>fieldset>#textarea>#enviar {
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     width: 60px;
+     height: 25px;
+     background-color: rgb(44, 114, 114);
+     border-radius: 5px;
+     color: aliceblue;
+ }
+
+ /*Escript consulta*/
+
+ #container>main>section>button {
+     width: 200px;
+     height: 25px;
+     margin-left: 350px;
+     margin-top: 15px;
+     background-color: rgb(44, 114, 114);
+     border-radius: 5px;
+     color: aliceblue;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+ }

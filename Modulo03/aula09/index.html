@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="estillo.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <header id="topo">
+            <div id="titulo">
+                <h1>Faz Mentorias</h1>
+                <img src="A_ess__ncia_da_mentoria.jpg" alt="">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Cadastro</a></li>
+                    <li><a href="consulta.html">Consulta</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+        <main>
+            <section id="conteudo">
+                <h2>Faça aqui seu cadastro</h2>
+
+                <form id="form">
+                    <fieldset>
+
+                        <label>Nome</label>
+                        <input type="text" id="nome" placeholder="Nome">
+                        <label>Email</label>
+                        <input type="text" id="email" placeholder="Email">
+                        <label>Estados</label>
+                        <input type="text" id="estados"><br>
+                        <label id="pularlinha">Modo de ensino</label>
+                        <input type="text" id="modo">
+
+                        <section id="textarea">
+                            <label>Conteúdo</label>
+                            <textarea id="content" placeholder="Em que precisas de ajuda?"></textarea>
+                            <input type="button" value="Enviar" id="enviar" onclick="registraMentoria()">
+                        </section>
+
+                    </fieldset>
+                </form>
+
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+
+<!--cadastro para receber mentoria
+
+nome:
+email:
+estado:
+cidade:
+modelo de ensino:
+conteudo:
+-->
