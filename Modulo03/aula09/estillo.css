@@ -5,7 +5,7 @@
  }
 
  #container {
-     width: 900px;
+     width: 1080px;
      height: 1920px;
      padding-top: 25px;
      border-radius: 25px;
@@ -25,7 +25,7 @@
  }
 
  header {
-     width: 800px;
+     width: 900px;
      height: 170px;
      padding: 15px;
      background-color: #3a59c4;
@@ -75,7 +75,7 @@
  }
 
  #form {
-     width: 800px;
+     width: 900px;
      height: 320px;
      padding: 15px;
      background-color: rgb(147, 190, 187);
@@ -146,6 +146,14 @@
      border-radius: 5px;
      color: aliceblue;
      font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+ }
+
+ #tabela,thead,tr,th{
+    border-collapse: collapse;
+    border: 1px solid #5171e4;
+    font-size: 15px;
 
 
  }

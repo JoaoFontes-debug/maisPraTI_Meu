@@ -1,0 +1,14 @@
+.navbar{
+  display: block;
+}
+
+.navbar>ul{
+  background-color: #706c66;
+  list-style: none;
+}
+.navbar>ul>li{
+  display: block;
+  float: left;
+  margin-left: 25px;
+
+}

@@ -42,14 +42,25 @@
                         <label id="pularlinha">Modo de ensino</label>
                         <input type="text" id="modo">
                     </fieldset>
-                    <p id="registros"></p>
+                    <table id="tabela">
+                       <thead>
+                            <tr>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Modo</th>
+                                <th scope="col">Descrição</th>
+                            </tr>
+                       </thead>
+
+                       <tbody id="registros"></tbody>
+                    </table>
                 </form>
-                <button id="pesquisar">Pesquisar</button>
+                <button id="pesquisar" onclick="pesquisaMentoria()">Pesquisar</button>
                 <button id="limpar" onclick="limpar()">Apagar registros</button>
             </section>
 
         </main>
-
 
     </div>
 
