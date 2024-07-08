@@ -1,0 +1,22 @@
+.texto{
+  color: #e08080;
+  font-size: 2.4em;
+}
+
+.caixa{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.caixa a{
+  text-decoration: none;
+  color: blueviolet;
+}
+
+.caixa a:hover{
+  background-color: #3264cf;
+  color: aquamarine;
+}
