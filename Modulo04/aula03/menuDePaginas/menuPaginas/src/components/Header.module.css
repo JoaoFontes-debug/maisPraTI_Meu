@@ -46,15 +46,16 @@
 .botoes{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-top: 20px;
     margin-left: -15px;
 
 }
 .botoes>li:active{
     background-color: #48d9f3;
-
+    
 }
+
 .botoes > li{
     margin-left: 3px;
     margin-top: 15px;
@@ -66,26 +67,28 @@
 
 .botoes >li:hover{
     background-color: #48d9f3;
-    color: #181c1f;
+    cursor: pointer;
+    color:  #181c1f;
 }
 
-.botoes >li>a:hover{
-    color: #181c1f;
-}
-
-.botoes >li>a{
+.botoes >li{
     text-decoration: none;
-    color: rgb(238, 226, 226);
+    color: rgb(238, 234, 234);
 }
 
 .painel{
-    width: 465px;
-    height: 120px;
+    width: 515px;
     margin-left: 29px;
     margin-top: -16px;
+    padding-top: 10px;
     border-top: 0;
     background-color: #2d3942;
     position: fixed;
+    height: auto; /*altera a altura da div automaticamente de acordo com o conteudo */
+}
+
+.botoes li .selecionado{
+    background-color: #48d9f3;
 }
 
 @media(max-width:576px) {
