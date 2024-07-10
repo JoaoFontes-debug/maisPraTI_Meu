@@ -1,0 +1,16 @@
+.contador{
+    height: 100%;
+    border: solid salmon 1px;
+    display: flex;
+    justify-content: center; /*alinha ma vertical*/
+    align-items: center; /*alinha na horizontal*/
+    flex-direction: row;
+    background-color: rgb(107, 107, 107);
+    color: aliceblue;
+}
+
+.contador>button{
+    width: 90px;
+    height: 25px;
+    margin-left: 10px;
+}
