@@ -1,0 +1,52 @@
+#box01{
+    width: 200px;
+    background: linear-gradient(to left, #3f87a6, #fff);
+}
+#box02{
+    width: 200px;
+    background: linear-gradient(217deg, #8846ca, #ffffff);
+}
+#box03{
+    width: 200px;
+    background: linear-gradient(0.25turn, #8bd0d3,#599281);
+}
+#box04{
+    width: 200px;
+    background: linear-gradient(to bottom, #3f87a6, #fff);
+}
+
+#box05{
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(217deg, #009de0 5%, #eb6666 70.71%);
+}
+
+#box06{
+    width: 300px;
+    height: 300px;
+    background: repeating-linear-gradient(#3f87a6, #f69d3c 50px);
+}
+
+#box07{
+    width: 300px;
+    height: 300px;
+    background: repeating-radial-gradient(#33a7da, #4927c4 50px);
+}
+
+#box08{
+    width: 300px;
+    height: 300px;
+    background: repeating-conic-gradient(#33a7da, #4927c4,yellow 15%);
+}
+
+#box09{
+    width: 300px;
+    height: 300px;
+    background: conic-gradient(#33a7da, #4927c4);
+}
+
+
+#box h1{
+    /*background: rgb(255, 255, 255, 0.5);*/
+   
+}

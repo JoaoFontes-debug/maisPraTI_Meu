@@ -1,0 +1,23 @@
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: #47a162;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 20px 20px 2px 10px rgb(14, 32, 14);
+}
+
+.box02 {
+    width: 200px;
+    height: 200px;
+    background: #47a162;
+    margin: 35px;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgb(179, 17, 17);
+}
+
+.box h1 {
+   color: white;
+   text-shadow: 20px 20px 5px #163f22;   
+}

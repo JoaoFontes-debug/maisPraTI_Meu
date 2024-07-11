@@ -1,0 +1,28 @@
+#content {
+    background-color: rgb(94, 87, 87);
+    height: auto;
+    padding: 15px;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: start;
+
+}
+
+
+.item{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background: grey;
+    border: 3px solid black;
+    flex-grow: 0;
+}
+
+.item04{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background: grey;
+    border: 3px solid black;
+    flex-grow: 1; /*completa o resto do espaço sobrando */
+}

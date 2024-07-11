@@ -1,0 +1,78 @@
+#box{
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+    position: relative;
+    /*animation-name: animation-box;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-timing-funtion: linear*/
+    animation: animation-box 2s 1s 3 alternate;
+}
+
+@keyframes animation-box {
+    from{
+        background: burlywood;
+        border-radius: 0;
+        top: 0;
+        left: 0;
+    }    
+    to{
+        background: orange;
+        border-radius: 100px;
+        top: 100px;
+        left: 100px;
+
+    }
+}
+
+#box02{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(145, 20, 20);
+    margin:15px 0;
+    position: relative;
+    animation: girar 4s 1s infinite alternate linear;
+    
+}
+
+@keyframes girar {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+#box03{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(40, 31, 163);
+    margin-top: 50px;
+}
+
+#box03:hover{
+    width: 400px;
+    background-color: rgb(35, 209, 171);
+    transition: all 3s;
+
+}
+
+#box04{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(163, 31, 130);
+    margin-top: 50px;
+}
+
+#box04:hover{
+    width: 200px;
+    height: 200px;
+    margin:15px 0;
+    position: relative;
+    animation: girar 4s 1s infinite alternate linear;
+}

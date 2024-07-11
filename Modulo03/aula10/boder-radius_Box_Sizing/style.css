@@ -1,0 +1,16 @@
+#box {
+    width: 200px;
+    height: 200px;
+    background: #b9c9a1;
+    margin: 10px;
+    border-radius: 10px 50px;
+    box-sizing: border-box; /* modifica o comportamento das propriedades dos elementos margin, paddin, border etc*/
+}
+
+.border02{
+    border-radius: 150px 50px;
+}
+
+.border{
+    border-radius: 150px;
+}
