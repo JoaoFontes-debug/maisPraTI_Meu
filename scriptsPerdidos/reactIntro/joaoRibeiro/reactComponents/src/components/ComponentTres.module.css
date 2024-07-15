@@ -1,0 +1,10 @@
+.componente{
+    background-color: rgb(148, 192, 134);
+    margin: 10px;
+    padding: 20px;
+
+}
+
+.componente .teste{
+    text-decoration: underline;
+}
