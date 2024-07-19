@@ -30,10 +30,11 @@ class Database {
     //pega o item com a chave id no localstorage
     const id = localStorage.getItem("id");
     //se o id estiver vazio seta como 0
-    if (id == null) {
+    if (id === null) {
       localStorage.setItem("id", 0);
     }
   }
+
   //salva o objeto mentoria no  array mentorias
   pegaMentorias() {
     //cria um array
@@ -65,28 +66,28 @@ class Database {
     localStorage.removeItem(id);
   }
 
-  pesquisaMentoria(mentoria) {
+  filtro(mentoria) {
     let filtraMentoria = this.pegaMentorias();
     console.log(filtraMentoria);
-    if (!mentoria.nome) {
+    if (mentoria.nome) {
       filtraMentoria = filtraMentoria.filter((m) => m.nome === mentoria.nome);
     }
 
-    if (!mentoria.email) {
+    if (mentoria.email) {
       filtraMentoria = filtraMentoria.filter((m) => m.email === mentoria.email);
     }
 
-    if (!mentoria.estado) {
+    if (mentoria.estado) {
       filtraMentoria = filtraMentoria.filter(
         (m) => m.estado === mentoria.estado
       );
     }
 
-    if (!mentoria.modo) {
+    if (mentoria.modo) {
       filtraMentoria = filtraMentoria.filter((m) => m.modo === mentoria.modo);
     }
 
-    if (!mentoria.descricao) {
+    if (mentoria.descricao) {
       filtraMentoria = filtraMentoria.filter(
         (m) => m.descricao === mentoria.descricao
       );
@@ -104,6 +105,7 @@ function pegaProximoId() {
   return parseInt(nextId) + 1;
 }
 
+// funcionando
 function preencheObjMentoria() {
   let nome = document.getElementById("nome").value;
   let email = document.getElementById("email").value;
@@ -115,6 +117,7 @@ function preencheObjMentoria() {
 
   if (mentoria.validaDados()) {
     database.criarMentoria(mentoria);
+    carregaMentorias(); // Atualiza a lista de mentorias após adicionar uma nova
   }
 }
 
@@ -143,11 +146,10 @@ function carregaMentorias(mentorias) {
     btn.onclick = () => {
       const id = p.id;
       database.removeMentoria(id);
-      window.location.reload();
+      carregaMentorias(); // Atualiza a lista de mentorias após remover uma
     };
     linha.insertCell(5).append(btn);
   });
-  //criando elemento apartir do javascrip
 }
 
 function pesquisaMentoria() {
@@ -158,7 +160,7 @@ function pesquisaMentoria() {
 
   const mentoria = new Mentoria(nome, email, estado, modo);
 
-  const mentorias = database.pesquisaMentoria(mentoria);
+  const mentorias = database.filtro(mentoria);
 
   carregaMentorias(mentorias);
 }
@@ -171,4 +173,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function limpar() {
   localStorage.clear();
+  carregaMentorias(); // Atualiza a lista de mentorias após limpar o localStorage
 }

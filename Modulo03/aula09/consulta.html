@@ -30,16 +30,16 @@
             <section id="conteudo">
                 <h2>Consultar cadastros</h2>
 
-                <form id="form">
+                <section id="form">
                     <fieldset>
 
                         <label>Nome</label>
                         <input type="text" id="nome" placeholder="Nome">
                         <label>Email</label>
                         <input type="text" id="email" placeholder="Email">
-                        <label>Estados</label>
+                        <label>Estado</label>
                         <input type="text" id="estados"><br>
-                        <label id="pularlinha">Modo de ensino</label>
+                        <label>Modo de ensino</label>
                         <input type="text" id="modo">
                     </fieldset>
                     <table id="tabela">
@@ -54,10 +54,11 @@
                        </thead>
 
                        <tbody id="registros"></tbody>
-                    </table>
-                </form>
-                <button id="pesquisar" onclick="pesquisaMentoria()">Pesquisar</button>
-                <button id="limpar" onclick="limpar()">Apagar registros</button>
+                    </table> 
+                    <button id="pesquisar" onclick="pesquisaMentoria()">Pesquisar</button>
+                    <button id="limpar" onclick="limpar()">Apagar registros</button>
+                </section>
+               
             </section>
 
         </main>

@@ -1,4 +1,4 @@
- body {
+body {
      background: #4377cba0;
      font-family: Georgia, 'Times New Roman', Times, serif;
      color: snow;
@@ -11,6 +11,9 @@
      border-radius: 25px;
      margin: 0 auto;
      background-color: aliceblue;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
  }
 
  #container>main>#conteudo>form,
@@ -76,7 +79,7 @@
 
  #form {
      width: 900px;
-     height: 320px;
+     height: auto;
      padding: 15px;
      background-color: rgb(147, 190, 187);
      border-radius: 10px;
@@ -118,12 +121,12 @@
  }
 
  textarea {
-     width: 300px;
-     height: 120px;
-     display: block;
-     margin-bottom: 10px;
-     border-radius: 10px;
-     resize: none;
+    width: 300px;
+    height: 120px;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    resize: none;
  }
 
  #conteudo>#form>fieldset>#textarea>#enviar {
@@ -137,23 +140,34 @@
 
  /*Escript consulta*/
 
- #container>main>section>button {
-     width: 200px;
+ #container>main>section>section >button {
+     width: 150px;
      height: 25px;
-     margin-left: 350px;
-     margin-top: 15px;
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: center;
+     align-items: center;
      background-color: rgb(44, 114, 114);
      border-radius: 5px;
+     margin-top: 15px;
      color: aliceblue;
      font-family: Georgia, 'Times New Roman', Times, serif;
-
+ }
+ 
+ #container>main>section> section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
  }
 
+
+
  #tabela,thead,tr,th{
     border-collapse: collapse;
+    margin-left: 15px;
+    margin-bottom: 25px;
     border: 1px solid #5171e4;
     font-size: 15px;
-
-
  }
