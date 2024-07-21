@@ -1,0 +1,73 @@
+/* Medidas fr, em e %*/
+/*normalmente as pessoas usam grid dentro de flex box*/
+
+*{
+    box-sizing: border-box;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  /*definiu a layout da pagina em 3 colunas*/
+    grid-auto-rows: minmax(100px, auto) ;
+    gap: 10px; /*separa os elementos*/
+    border: 2px solid salmon;
+    border-radius: 5px;
+    background-color: rgb(229, 229, 200);
+    padding: 1em;
+    color: brown;
+}
+/* grid-tamplate-columns ou grid-template-rows */
+img{
+    display: grid;
+    width: 85%;
+}
+
+
+#componenteResponsivo{
+    display: grid;
+    border: 2px solid rgb(33, 134, 77);
+    border-radius: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(252, 239, 223);
+    color: rgb(69, 62, 89);
+    font-weight: 100;
+    font-style: italic;
+}
+
+#resp03{
+    display: grid;
+    grid-template-columns: 100px repeat(6, 1fr);
+    border: 2px solid burlywood;
+}
+
+
+
+.box > div {
+    border: 2px solid salmon;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+/*defini a qunatidade de colunas e a muda a posiçao da linha ou coluna de acordo com o contexto*/ 
+.um{
+    grid-column: 2/2;
+    grid-row: 2;
+
+}
+
+.dois{
+    grid-column: 2/4;
+    grid-row: 3/3;
+}
+/*define onde começa e termina um elemento de acordo com a referencia das linhas do grid*/
+.tres{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.quatro{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
